@@ -1,2 +1,2 @@
-Worker: bash HELL 
+Worker: HELL 
 web: python -m http.server $PORT
