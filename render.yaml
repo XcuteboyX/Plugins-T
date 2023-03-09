@@ -1,0 +1,27 @@
+services:
+  - type: web
+    plan: free
+    name: Plugins-T
+    env: python
+    buildCommand: pip3 install -U -r requirements.txt
+    startCommand: python3 -m TelethonHell
+    repo: https://github.com/XcuteboyX/Plugins-T
+    branch: master
+    envVars:
+      - key: APP_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
+      - key: BOT_TOKEN 
+        sync: false
+      - key: BOT_LIBRARY
+        sync: false
+      - key: DATABASE_URL
+        sync: false 
+      - key: HELLBOT_SESSION
+        sync: false
+      - key: HANDLER  
+        sync: false
+      - key: SUDO_HANDLER
+        sync: false
+    autoDeploy: false
